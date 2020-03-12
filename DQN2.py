@@ -1,6 +1,6 @@
 from PyTetris import State
 import tensorflow.keras as keras
-from tools2 import *
+from tools import *
 import numpy as np
 from dlmodel import *
 from time import time
