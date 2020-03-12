@@ -3,19 +3,27 @@ import tensorflow.keras as keras
 from tools import *
 import numpy as np
 from dlmodel import *
-from time import time
+from time import time, sleep
 import random
 
 display = True
-new_model = False
-model_name = "Q11"
+new_model = True
+model_name = "Q15"
+history = -1
+# Q14 well working
 
 batch_size = 20  # train multiple times on one dataset
 
-branch = [5, 10, 7, 5]
+branch = [5, 15]
 
 gameover_penalty = -100
 survive_bonus = 0.1
+
+
+def tick(target: PyTetris.Window):
+    while target.tick():
+        sleep(0.01)
+
 
 if display:
     window = PyTetris.Window()
@@ -33,10 +41,13 @@ S = State(10, 20)
 
 X, Y = [], []
 
+if history > 0:
+    Q = keras.models.load_model("./backup/" + model_name + "_%d.h5" % history)
+
 life_duration = 0
 score_duration = 0
-life_list = [1]
-score_list = [0]
+life_list = []
+score_list = []
 
 qvalue = Display()
 
@@ -45,7 +56,7 @@ while True:
     for batch in range(batch_size):
         t0 = time()
         transition_sample = policy_greedy_e_sample(S, Q, branch[0])
-        nodes = [[[x[0], None, x[2] if (x[1][1] >= 0 and x[1] != (-1, -1, -1)) else gameover_penalty,
+        nodes = [[[x[0], None, x[2] if (x[1][1] >= 0 or x[1] == (-1, -1, -1)) else gameover_penalty,
                    []] for x in transition_sample]]
 
         for depth in range(len(branch) - 1):
@@ -67,12 +78,13 @@ while True:
             transition_ind = 0
             for i, s in enumerate(nodes[-1]):
                 transitions_sorted = next(
-                    zip(*sorted(list(zip(transition_list[i], Q_values[transition_ind:transition_ind + assign[i]])), key=lambda x: x[1], reverse=True)))
+                    zip(*sorted(list(zip(transition_list[i], Q_values[transition_ind:transition_ind + assign[i]])),
+                                key=lambda x: x[1], reverse=True)))
                 transition_ind += assign[i]
                 transition_sample = transitions_sorted[:min(len(transitions_sorted), branch[depth + 1])]
-            # /paralleled policy_greedy_samples
+                # /paralleled policy_greedy_samples
                 for t in transition_sample:
-                    r = t[2] if (t[1][1] >= 0 and t[1] != (-1, -1, -1)) else gameover_penalty
+                    r = t[2] if (t[1][1] >= 0 or t[1] == (-1, -1, -1)) else gameover_penalty
                     next_node.append([t[0], i, r, []])
             nodes.append(next_node)
 
@@ -109,7 +121,11 @@ while True:
             Y.append(final_Q[i])
 
         a = np.argmax(np.asarray(final_Q))
-        S = nodes[0][a][0].copy()  # Greedy
+        if random.random() < 0.95:  # e-greedy
+            S = nodes[0][a][0].copy()
+        else:
+            S = random.choice(nodes[0])[0].copy()
+
         r = nodes[0][a][2]
 
         qvalue.print(
@@ -142,10 +158,11 @@ while True:
     if len(life_list) > 5:
         life_list = life_list[-5:]
         score_list = score_list[-5:]
-    print("E(life):\t%.4f" % (sum(life_list) / len(life_list)), end='\t')
-    print("E(score):\t%.4f" % (sum(score_list) / len(score_list)))
+    print("E(life):\t%.4f" % (sum(life_list) / len(life_list) if len(life_list) > 0 else 0), end='\t')
+    print("E(score):\t%.4f" % (sum(score_list) / len(score_list) if len(score_list) > 0 else 0))
     Q.save(model_name + ".h5")
     if epoch % 10 == 0:
         Q.save("./backup/" + model_name + "_" + str(int(epoch / 10)) + ".h5")
-    X, Y = [], []
+    X = X[int(len(X) * 0.75):]
+    Y = Y[int(len(Y) * 0.75):]
     epoch += 1
