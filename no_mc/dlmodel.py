@@ -11,17 +11,11 @@ def build_model():
     x = keras.layers.LeakyReLU()(x)
     x = x + x_shortcut
 
-    x_shortcut = x
-    x = keras.layers.Conv2D(33, (3, 3), padding='same')(x)
-    x = keras.layers.BatchNormalization()(x)
-    x = keras.layers.LeakyReLU()(x)
-    x = x + x_shortcut
-
-    x = keras.layers.Conv2D(24, (10, 1), padding='valid')(x)
+    x = keras.layers.Conv2D(12, (10, 1), padding='valid')(x)
     x = keras.layers.BatchNormalization()(x)
     x = keras.layers.LeakyReLU()(x)
 
-    x = keras.layers.Conv2D(24, (1, 20), padding='valid')(x)
+    x = keras.layers.Conv2D(12, (1, 20), padding='valid')(x)
     x = keras.layers.BatchNormalization()(x)
     x = keras.layers.LeakyReLU()(x)
 

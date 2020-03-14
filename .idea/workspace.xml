@@ -2,13 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2fb2d2d3-61ac-419f-9e37-5d60ec559398" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/trash/tools.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/DQN-checkpoint.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DQN.py" beforeDir="false" afterPath="$PROJECT_DIR$/trash/DQN_old1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DQN1.py" beforeDir="false" afterPath="$PROJECT_DIR$/trash/DQN_old2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modeldata.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no_mc/dlmodel.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no_mc/leacktest.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no_mc/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no_mc/tools.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DQN2.py" beforeDir="false" afterPath="$PROJECT_DIR$/DQN2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Q.h5" beforeDir="false" afterPath="$PROJECT_DIR$/model/Q.h5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Q10.h5" beforeDir="false" afterPath="$PROJECT_DIR$/model/Q10.h5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Q11.h5" beforeDir="false" afterPath="$PROJECT_DIR$/model/Q11.h5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Q2.h5" beforeDir="false" afterPath="$PROJECT_DIR$/model/Q2.h5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Q3.h5" beforeDir="false" afterPath="$PROJECT_DIR$/model/Q3.h5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Q4.h5" beforeDir="false" afterPath="$PROJECT_DIR$/model/Q4.h5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Q5.h5" beforeDir="false" afterPath="$PROJECT_DIR$/model/Q5.h5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Q6.h5" beforeDir="false" afterPath="$PROJECT_DIR$/model/Q6.h5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Q7.h5" beforeDir="false" afterPath="$PROJECT_DIR$/model/Q7.h5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Q8.h5" beforeDir="false" afterPath="$PROJECT_DIR$/model/Q8.h5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Q9.h5" beforeDir="false" afterPath="$PROJECT_DIR$/model/Q9.h5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlmodel.py" beforeDir="false" afterPath="$PROJECT_DIR$/dlmodel.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tools.py" beforeDir="false" afterPath="$PROJECT_DIR$/tools.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tools2.py" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,12 +30,12 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DQN2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="684">
-              <caret line="87" selection-start-line="87" selection-end-line="87" />
+            <state relative-caret-position="200">
+              <caret line="20" column="18" lean-forward="true" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -31,22 +44,27 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dlmodel.py">
+        <entry file="file://$PROJECT_DIR$/no_mc/tools.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/no_mc/leacktest.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="38">
-              <caret line="2" selection-start-line="2" selection-end-line="2" />
+            <state relative-caret-position="361">
+              <caret line="19" column="40" lean-forward="true" selection-start-line="19" selection-start-column="40" selection-end-line="19" selection-end-column="40" />
+              <folding>
+                <element signature="e#0#15#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tools.py">
+        <entry file="file://$PROJECT_DIR$/dlmodel.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="13" column="11" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="11" />
-              <folding>
-                <element signature="e#0#15#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="179">
+              <caret line="12" selection-start-line="12" selection-end-line="12" />
             </state>
           </provider>
         </entry>
@@ -66,6 +84,7 @@
       <find>hold_used</find>
       <find>policy_greedy</find>
       <find>branch_n</find>
+      <find>gameover_penalty</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -76,17 +95,23 @@
       <list>
         <option value="$PROJECT_DIR$/model.py" />
         <option value="$PROJECT_DIR$/DQN.py" />
-        <option value="$PROJECT_DIR$/tools.py" />
         <option value="$PROJECT_DIR$/DQN1.py" />
-        <option value="$PROJECT_DIR$/dlmodel.py" />
         <option value="$PROJECT_DIR$/tools2.py" />
+        <option value="$PROJECT_DIR$/DQN3.py" />
+        <option value="$PROJECT_DIR$/modeldata.txt" />
+        <option value="$PROJECT_DIR$/dlmodel.py" />
+        <option value="$PROJECT_DIR$/tools.py" />
+        <option value="$PROJECT_DIR$/DQN_SARSA.py" />
+        <option value="$PROJECT_DIR$/no_mc/main.py" />
+        <option value="$PROJECT_DIR$/no_mc/tools.py" />
         <option value="$PROJECT_DIR$/DQN2.py" />
+        <option value="$PROJECT_DIR$/no_mc/leacktest.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="792" />
-    <option name="width" value="1135" />
+    <option name="x" value="953" />
+    <option name="width" value="974" />
     <option name="height" value="1047" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -101,6 +126,11 @@
             <path>
               <item name="DQN" type="b2602c69:ProjectViewProjectNode" />
               <item name="DQN" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DQN" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DQN" type="462c0819:PsiDirectoryNode" />
+              <item name="no_mc" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="DQN" type="b2602c69:ProjectViewProjectNode" />
@@ -119,11 +149,12 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\cykim\Workspace\DeepLearning\DQN\trash" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\cykim\Workspace\DeepLearning\DQN" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\cykim\Workspace\DeepLearning\DQN\model" />
+      <recent name="C:\Users\cykim\Workspace\DeepLearning\DQN\trash" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -138,7 +169,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.DQN2">
+  <component name="RunManager" selected="Python.leacktest">
     <configuration name="DQN" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="DQN" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -202,9 +233,53 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="DQN3" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="DQN" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/DQN3.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="leacktest" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="DQN" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/no_mc" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/no_mc/leacktest.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.leacktest" />
         <item itemvalue="Python.DQN2" />
+        <item itemvalue="Python.DQN3" />
         <item itemvalue="Python.DQN1" />
         <item itemvalue="Python.DQN" />
       </list>
@@ -221,6 +296,14 @@
       <option name="presentableId" value="Default" />
       <updated>1583911716432</updated>
     </task>
+    <task id="LOCAL-00001" summary="update">
+      <created>1584032278467</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1584032278467</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TodoView">
@@ -233,19 +316,20 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="792" y="0" width="1135" height="1047" extended-state="0" />
+    <frame x="953" y="0" width="974" height="1047" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.23154056" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.2275641" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="0" weight="0.32932165" />
-      <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
-      <window_info anchor="bottom" id="Python Console" order="2" weight="0.32932165" />
+      <window_info anchor="bottom" id="Terminal" order="0" weight="0.32858709" />
+      <window_info anchor="bottom" id="Event Log" order="1" sideWeight="0.5004198" side_tool="true" weight="0.27382258" />
+      <window_info anchor="bottom" id="Python Console" order="2" weight="0.32858709" />
       <window_info anchor="bottom" id="Message" order="3" />
       <window_info anchor="bottom" id="Find" order="4" />
-      <window_info anchor="bottom" id="Version Control" order="5" />
-      <window_info anchor="bottom" id="Run" order="6" visible="true" weight="0.32968238" />
-      <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
+      <window_info anchor="bottom" id="Version Control" order="5" weight="0.32968238" />
+      <window_info anchor="bottom" id="Run" order="6" sideWeight="0.49958017" weight="0.2705367" />
+      <window_info anchor="bottom" id="Debug" order="7" weight="0.39978093" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="10" weight="0.32932165" />
@@ -253,25 +337,10 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
-    <layout-to-restore>
-      <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.22996795" />
-      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="0" weight="0.32932165" />
-      <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
-      <window_info anchor="bottom" id="Python Console" order="2" weight="0.32932165" />
-      <window_info anchor="bottom" id="Message" order="3" />
-      <window_info anchor="bottom" id="Find" order="4" />
-      <window_info anchor="bottom" id="Version Control" order="5" />
-      <window_info anchor="bottom" id="Run" order="6" visible="true" weight="0.32932165" />
-      <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="10" weight="0.32932165" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-    </layout-to-restore>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="update" />
+    <option name="LAST_COMMIT_MESSAGE" value="update" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/trash/DQN_old1.py">
@@ -291,13 +360,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Anaconda3/envs/cykim/Lib/random.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="320" selection-start-line="320" selection-end-line="320" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/trash/tools.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="228">
@@ -308,29 +370,62 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dlmodel.py">
+    <entry file="file://$PROJECT_DIR$/DQN3.py" />
+    <entry file="file://$USER_HOME$/Anaconda3/envs/cykim/Lib/random.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        <state relative-caret-position="212">
+          <caret line="320" selection-start-line="320" selection-end-line="320" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/DQN_SARSA.py" />
     <entry file="file://$PROJECT_DIR$/tools.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="13" column="11" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="11" />
+        <state relative-caret-position="133">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/tools_old.py" />
+    <entry file="file://$PROJECT_DIR$/modeldata.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" column="2585" selection-start-line="1" selection-start-column="2585" selection-end-line="1" selection-end-column="2585" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/no_mc/main.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/DQN2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="684">
-          <caret line="87" selection-start-line="87" selection-end-line="87" />
+        <state relative-caret-position="200">
+          <caret line="20" column="18" lean-forward="true" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dlmodel.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/no_mc/tools.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/no_mc/leacktest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="19" column="40" lean-forward="true" selection-start-line="19" selection-start-column="40" selection-end-line="19" selection-end-column="40" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -11,7 +11,7 @@ epsilon = 0.1
 
 
 def policy_greedy_e_sample(S: PyTetris.State, model: keras.Model, n: int):
-    e = 0.4
+    e = 0.2
     transitions = S.transitions()
     d_greedy = min(floor(n * (1 - e)), len(transitions))
     d_random = min(ceil(n * e), len(transitions))
@@ -19,7 +19,7 @@ def policy_greedy_e_sample(S: PyTetris.State, model: keras.Model, n: int):
     inputs = np.asarray([state_to_layer(S, s1[0]) for s1 in transitions])
     Q_values = model.predict(inputs)
     transitions_sorted = next(zip(*sorted(list(zip(transitions, Q_values)), key=lambda x: x[1], reverse=True)))
-    return list(transitions_sorted[:d_greedy]) + list(random.sample(transitions_sorted[d_greedy:], d_random))
+    return list(transitions_sorted[:d_greedy]) + list(random.sample(transitions_sorted[d_greedy:], min(d_random, len(transitions_sorted) - d_greedy)))
 
 
 def policy_greedy_sample(S: PyTetris.State, model: keras.Model, n: int):
